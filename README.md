@@ -6,9 +6,9 @@ Uses the local nameserver configuration for RR requests.
 #Methods
 There are two way to check CAA for a domain
 
-`caa = CAAuth.new`
-`caa.domain="x.y.z"`
-`caa.CAA #=>returns a hash with :domain, :location, :flag, :tag, :value`
+`caa = CAAuth.new`. 
+`caa.domain="x.y.z"`.  
+`caa.CAA #=>returns a hash with :domain, :location, :flag, :tag, :value`. 
 
 or
 
