@@ -8,7 +8,7 @@ There are two way to check CAA for a domain
 
 `caa = CAAuth.new` <br>
 `caa.domain="x.y.z"` <br>
-`caa.CAA #=>returns a hash with :domain, :location, :flag, :tag, :value`. 
+`caa.CAA #=>returns a hash with :domain, :loc, :flag, :tag, :value`. 
 
 or
 
