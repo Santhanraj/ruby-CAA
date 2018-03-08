@@ -3,18 +3,19 @@ A Ruby implementation of DNS - Certificate Authority Authorization (CAA) checks 
 
 Uses the local nameserver configuration for RR requests.
 
-#Methods
+## Methods
 There are two way to check CAA for a domain
 
-`caa = CAAuth.new`. 
-`caa.domain="x.y.z"`.  
+`caa = CAAuth.new` <br>
+`caa.domain="x.y.z"` <br>
 `caa.CAA #=>returns a hash with :domain, :location, :flag, :tag, :value`. 
 
 or
 
 `caa.check('x.y.z') #=>returns a hash with :domain, :loc, :flag, :tag, :value`
 
-##Returns
-:domain -> the primary domain
-:loc -> the location where the CAA RR was found. I.e., primary, CNAME, hierarchy (parent or grandparent domain), hierarchy-CNAME
+## Return
+returns a hash containing <br>
+:domain -> the primary domain <br>
+:loc -> the location where the CAA RR was found. I.e., primary, CNAME, hierarchy (parent or grandparent domain), hierarchy-CNAME <br>
 :flag, :tag, :value -> as per RFC 6844
