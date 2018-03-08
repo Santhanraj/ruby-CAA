@@ -69,7 +69,6 @@ class CAAuth
 
   def domain=(domain)
     @domain = domain
-    self.CAA
   end
 
   def CNAME(domain)
